@@ -1,0 +1,8 @@
+{
+  "title": "Tower of Hanoi",
+  "description": "Solve the classic mathematical puzzle by moving the disks to the final tower.",
+  "keywords": ["puzzle", "hanoi", "logic", "math", "brain"],
+  "category": "Puzzle",
+  "author": "PewPlay",
+  "playMode": "SinglePlayer"
+}
