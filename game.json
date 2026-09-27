@@ -1,8 +1,15 @@
 {
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Tower of Hanoi",
   "description": "Solve the classic mathematical puzzle by moving the disks to the final tower.",
-  "keywords": ["puzzle", "hanoi", "logic", "math", "brain"],
   "category": "Puzzle",
+  "tags": [
+    "puzzle",
+    "hanoi",
+    "logic",
+    "math",
+    "brain"
+  ],
   "author": "PewPlay",
   "playMode": "SinglePlayer"
 }
