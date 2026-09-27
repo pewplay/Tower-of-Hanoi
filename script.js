@@ -1,4 +1,4 @@
-// Alert box using SweetAlert2 - https://limonte.github.io/sweetalert2
+// Alert box: small local SweetAlert2-style dialog (swal-lite.js)
 $(document).ready(function() {
 
 	// Variables
@@ -16,10 +16,10 @@ $(document).ready(function() {
 	
 	// Set Rating and final Score
 	function setRating(moves) {
-		if (moves === 127) {
+		if (moves === 128) {
 			$ratingStars.eq(2).removeClass('fa-star').addClass('fa-star-o');
 			rating = 2;
-		} else if (moves >= 128 && moves <= 228) {
+		} else if (moves >= 129 && moves <= 228) {
 			$ratingStars.eq(1).removeClass('fa-star').addClass('fa-star-o');
 			rating = 1;
 		} else if (moves >= 229) {
@@ -53,11 +53,11 @@ $(document).ready(function() {
 				swal({
 					allowEscapeKey: false,
 					allowOutsideClick: false,
-					title: 'Congratulazione! Hai vinto!',
+					title: 'Congratulations! You won!',
 					text: "Boom Shaka Lak",
 					type: 'success',
 					confirmButtonColor: '#8bc34a',
-					confirmButtonText: 'Gioca di nuovo!'
+					confirmButtonText: 'Play again!'
 				}).then(function(isConfirm) {
 					if (isConfirm) {
 						initGame($tower.eq(0));
@@ -101,13 +101,13 @@ $(document).ready(function() {
 		swal({
 				allowEscapeKey: false,
 				allowOutsideClick: false,
-				title: 'Sei sicuro?',
-				text: "I tuoi progressi andranno persi!",
+				title: 'Are you sure?',
+				text: "Your progress will be lost!",
 				type: 'warning',
 				showCancelButton: true,
 				confirmButtonColor: '#8bc34a',
 				cancelButtonColor: '#e91e63',
-				confirmButtonText: 'SI, Riavvia il gioco!'
+				confirmButtonText: 'Yes, restart the game!'
 		}).then(function(isConfirm) {
 				if (isConfirm) {
 					initGame($tower.eq(0));
