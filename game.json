@@ -1,40 +1,54 @@
 {
   "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Tower of Hanoi",
-  "description": "Solve the classic mathematical puzzle by moving the disks to the final tower.",
-  "about": "Tower of Hanoi is a browser game where you move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one.\n\nStart a round in your browser and use the controls below to play.",
-  "howToPlay": "Move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one.",
+  "description": "Move a stack of seven colored disks to another peg, never placing a bigger disk on a smaller one, in this free Tower of Hanoi puzzle for your browser.",
+  "about": "Tower of Hanoi is the timeless logic puzzle with three pegs and a stack of seven colored disks. Your job is to move the whole tower from the left peg to one of the other two, one disk at a time, without ever putting a larger disk on top of a smaller one.\n\nThe rules take seconds to learn, but the solution rewards careful thinking: the shortest possible answer takes exactly 127 moves. A move counter tracks every step and three stars show how close you are to perfect, dropping as extra moves pile up. Once you spot the recursive pattern hidden in the puzzle, the tower almost builds itself.\n\nIt is a calm brain teaser for puzzle fans, students learning about recursion and anyone who wants to train patience and planning.",
+  "howToPlay": "Click or tap a peg to lift its top disk, then click another peg to drop it there. A disk can only go on an empty peg or on a larger disk; click the same peg again to put it back. Move all seven disks onto the middle or right peg to win, using as few moves as possible.",
   "controls": [
     {
-      "input": "Click / tap",
-      "action": "Select a disk and destination peg"
+      "input": "Click / Tap peg",
+      "action": "Lift the top disk or drop the held disk"
+    },
+    {
+      "input": "Click / Tap restart icon",
+      "action": "Restart the puzzle"
     }
   ],
   "tips": [
-    "Use click / tap to select a disk and destination peg.",
-    "Try another round to practice the timing and strategy."
+    "With an odd number of disks like seven, move the smallest disk to the peg where you want the tower to end up first.",
+    "Move the smallest disk every other turn, always cycling in the same direction around the pegs.",
+    "On the turns between, make the only legal move that does not involve the smallest disk.",
+    "Aim for the perfect 127 moves to keep all three stars."
   ],
   "faq": [
     {
-      "question": "How do I play Tower of Hanoi?",
-      "answer": "Move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one."
+      "question": "Is Tower of Hanoi free to play?",
+      "answer": "Yes. It is completely free and runs in your browser with no download or account needed."
     },
     {
-      "question": "Can I play Tower of Hanoi in a browser?",
-      "answer": "Yes. Open the game page and play without installing an app."
+      "question": "Can I play it on a phone or tablet?",
+      "answer": "Yes. Just tap the pegs to move the disks; the board scales to fit the screen."
+    },
+    {
+      "question": "What is the minimum number of moves?",
+      "answer": "With seven disks the best possible solution takes 127 moves (2 to the power of 7, minus 1). Finish in 127 to keep all three stars."
     }
   ],
   "category": "Puzzle",
   "tags": [
-    "puzzle",
-    "hanoi",
+    "tower of hanoi",
     "logic",
-    "math",
-    "brain"
+    "brain teaser",
+    "recursion",
+    "disks"
   ],
+  "author": "PewPlay",
   "playMode": "SinglePlayer",
   "orientation": "any",
   "cover": "cover.png",
-  "draft": true,
-  "author": "PewPlay"
+  "screenshots": [
+    "screenshots/1.png",
+    "screenshots/2.png",
+    "screenshots/3.png"
+  ]
 }
