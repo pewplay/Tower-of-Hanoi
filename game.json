@@ -2,6 +2,28 @@
   "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Tower of Hanoi",
   "description": "Solve the classic mathematical puzzle by moving the disks to the final tower.",
+  "about": "Tower of Hanoi is a browser game where you move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one.\n\nStart a round in your browser and use the controls below to play.",
+  "howToPlay": "Move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one.",
+  "controls": [
+    {
+      "input": "Click / tap",
+      "action": "Select a disk and destination peg"
+    }
+  ],
+  "tips": [
+    "Use click / tap to select a disk and destination peg.",
+    "Try another round to practice the timing and strategy."
+  ],
+  "faq": [
+    {
+      "question": "How do I play Tower of Hanoi?",
+      "answer": "Move the stack of disks to the destination peg, moving one disk at a time and never placing a larger disk on a smaller one."
+    },
+    {
+      "question": "Can I play Tower of Hanoi in a browser?",
+      "answer": "Yes. Open the game page and play without installing an app."
+    }
+  ],
   "category": "Puzzle",
   "tags": [
     "puzzle",
@@ -10,6 +32,9 @@
     "math",
     "brain"
   ],
-  "author": "PewPlay",
-  "playMode": "SinglePlayer"
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "draft": true,
+  "author": "PewPlay"
 }
