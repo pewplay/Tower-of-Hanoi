@@ -2,15 +2,27 @@
   "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Tower of Hanoi",
   "description": "Move a stack of seven colored disks to another peg, never placing a bigger disk on a smaller one, in this free Tower of Hanoi puzzle for your browser.",
-  "about": "Tower of Hanoi is the timeless logic puzzle with three pegs and a stack of seven colored disks. Your job is to move the whole tower from the left peg to one of the other two, one disk at a time, without ever putting a larger disk on top of a smaller one.\n\nThe rules take seconds to learn, but the solution rewards careful thinking: the shortest possible answer takes exactly 127 moves. A move counter tracks every step and three stars show how close you are to perfect, dropping as extra moves pile up. Once you spot the recursive pattern hidden in the puzzle, the tower almost builds itself.\n\nIt is a calm brain teaser for puzzle fans, students learning about recursion and anyone who wants to train patience and planning.",
-  "howToPlay": "Click or tap a peg to lift its top disk, then click another peg to drop it there. A disk can only go on an empty peg or on a larger disk; click the same peg again to put it back. Move all seven disks onto the middle or right peg to win, using as few moves as possible.",
+  "about": "Tower of Hanoi is the timeless logic puzzle with three pegs and a stack of seven colored disks. Your job is to move the whole tower from the left peg to one of the other two, one disk at a time, without ever putting a larger disk on top of a smaller one.\n\nThe rules take seconds to learn, but the solution rewards careful thinking: the shortest possible answer takes exactly 127 moves. The move counter sits next to the minimum, and three stars show how close you are to perfect, dropping as extra moves pile up. Your best result and your puzzle in progress are saved in the browser, so you can come back and finish later.\n\nBig disks fill the screen on computers, tablets and phones in either orientation, and you can play by tapping pegs or by dragging disks with your finger or mouse. It is a calm brain teaser for puzzle fans, students learning about recursion and anyone who wants to train patience and planning.",
+  "howToPlay": "Tap or click a peg to lift its top disk, then tap another peg to drop it there, or simply drag the disk onto the new peg. A disk can only go on an empty peg or on a larger disk; tap the same peg again to put a lifted disk back. Move all seven disks onto the middle or right peg to win, using as few moves as possible.",
   "controls": [
     {
       "input": "Click / Tap peg",
-      "action": "Lift the top disk or drop the held disk"
+      "action": "Lift the top disk, or drop the lifted disk there"
     },
     {
-      "input": "Click / Tap restart icon",
+      "input": "Drag disk",
+      "action": "Move the top disk straight to another peg"
+    },
+    {
+      "input": "1 / 2 / 3 keys",
+      "action": "Select the left, middle or right peg"
+    },
+    {
+      "input": "Esc",
+      "action": "Put the lifted disk back"
+    },
+    {
+      "input": "R / Restart button",
       "action": "Restart the puzzle"
     }
   ],
@@ -18,7 +30,7 @@
     "With an odd number of disks like seven, move the smallest disk to the peg where you want the tower to end up first.",
     "Move the smallest disk every other turn, always cycling in the same direction around the pegs.",
     "On the turns between, make the only legal move that does not involve the smallest disk.",
-    "Aim for the perfect 127 moves to keep all three stars."
+    "Aim for the perfect 127 moves to keep all three stars; you keep two stars up to 160 moves and one up to 228."
   ],
   "faq": [
     {
@@ -27,11 +39,15 @@
     },
     {
       "question": "Can I play it on a phone or tablet?",
-      "answer": "Yes. Just tap the pegs to move the disks; the board scales to fit the screen."
+      "answer": "Yes. Tap a peg to lift a disk and tap another to drop it, or drag disks with your finger. The board fills the screen in portrait and landscape."
     },
     {
       "question": "What is the minimum number of moves?",
       "answer": "With seven disks the best possible solution takes 127 moves (2 to the power of 7, minus 1). Finish in 127 to keep all three stars."
+    },
+    {
+      "question": "Is my progress saved?",
+      "answer": "Yes. Your best score and the puzzle you are working on are stored in your browser, so you can close the page and continue later."
     }
   ],
   "category": "Puzzle",
